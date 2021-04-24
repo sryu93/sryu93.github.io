@@ -350,9 +350,13 @@ color:white;
 #upcoming img{
     
     width:130%;
-    height:auto;
+    justify-content:center;
+
 }
 
+.imgbox{
+    align-items: flex-start;
+}
        .side{
         display:flex;
         flex-direction: column;
