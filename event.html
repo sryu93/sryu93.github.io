@@ -1,155 +1,386 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif; */
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="about.css">
-
-    <title>Paratta Home</title>
-</head>
-
-<body>
-    <nav id="navbar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Artist</a></li>
-            <li><a href="#">contact</a></li>
-        </ul>
-    </nav>
-
-    <hr>
-
-    <!--artshow -->
-
-    <section id="main">
+}
 
 
-        <div class="header">
-            <h1>Art Show</h1>
-        </div>
+    /* body{
+    
+        background-image: url("image/canvas.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size:cover;
+        background-attachment: fixed;
+        
+    }
+   */
+  
+    
+hr{
+    border-bottom:2px;
+}
+
+h2{
+    font-family: 'Roboto Slab', serif; 
+    font-size: 4rem;
+    margin: 80px
+    text-align: center;
+    margin-bottom: 3rem;
+}
 
 
+/* ~~~navbar~~~ */
 
-        <!--container-->
-
-        <!--first-->
-
-        <div class="artshow">
-
-            <div class="art-show-schedule">
-
-                <a href="#">The Lorem</a>
-
-                <p>Jan.30.22</p>
-                <p>Lorem isuo mazos</p>
-
-            </div>
-
-            <!--second art show-->
-
-
-            <div class="art-show-schedule">
-
-                <a href="#">The Lorem</a>
-
-                <p>Jan.30.22</p>
-                <p>Lorem isuo mazos</p>
-
-            </div>
-
-
-            <!--3rd last-->
-
-
-            <div class="art-show-schedule">
-
-                <a href="#">The Lorem</a>
-
-                <p>Jan.30.22</p>
-                <p>Lorem isuo mazos</p>
-
-            </div>
-    </section>
-
-    <!--upcoming exhibitions-->
-
-    <section id="upcoming">
-        <h2>Upcoming Exhibitions</h2>
-        <div class="imgbox">
-            <img src="image\about-imge-1 1kx1k.jpg" alt="living room with portrait">
-        </div>
-        <div class="side">
-            <h3>lorem</h3>
-            <br>
-            <p><em>dkssuddOemffk?akssk</em></p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-            </p>
-        </div>
-
-        <div class="imgbox">
-            <img src="image\about-imge-2 1kx1k.jpg" alt="paint at foyer">
-        </div>
-        <div class="side">
-            <h3>lorem</h3>
-            <br>
-            <p><em>dkssuddOemffk?akssk</em></p>
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-            </p>
-        </div>
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    border: 0 solid;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    background-color:white;
 
 
 
 
-    </section>
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 60px;
+    
 
 
 
-    <!--cards-->
+
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+
+}
+
+ul a {
+    text-align: center;
+    margin: auto;
+    color: black;
+    font-size: 16px;
+    padding: 18 18px;
+
+}
+
+
+/* ~~~Art show~~~ */
+
+#main{
+    display:flex-wrap;
+    
+   justify-content: center;
+   background-image: url("image/art about.png");
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size:cover;
+   padding:80px;
+   margin-top: 2px;
+   box-shadow: 0 4px 20px -2px rgba(128, 128, 128, 0.377);
+ 
+}
 
 
 
-    <h2>faucibus dictum</h2>
-    <section class="cards">
 
-        <div class="card-1">
+.artshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    
+    width: 650px;
+    margin: auto;
+    
+   
+}
 
-
-
-            <div class="card-2">
-                <h4>lorem</h4>
-                t. Aliquam faucibus purus in massa tempor nec feugi
-                t. Aliquam faucibus purus in massa tempor nec feugi
-            </div>
-        </div>
-        <div class="card-1">
-
-            <div class="card-2">
-                <h4>lorem</h4>
-                t. Aliquam faucibus purus in massa tempor nec feugi
-                t. Aliquam faucibus purus in massa tempor nec feugi
-            </div>
-        </div>
-
-        <div class="card-1">
-
-            <div class="card-2">
-                <h4>lorem</h4>
-                t. Aliquam faucibus purus in massa tempor nec feugi
-                t. Aliquam faucibus purus in massa tempor nec feugi
-            </div>
-        </div>
-    </section>
+.header{
+    display:flex;
+    justify-content: center;
+    font-size: 100px;
+    font-weight:light ;
+    text-align: left;
+   margin:80px 0;
+   font-family: 'Roboto Slab', serif;
+}
 
 
-</body>
+.art-show-schedule{
+   
+ display:flex;
+ flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin:auto;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+   
+    
+}
+   
 
-</html>
+    .art-show-schedule a{
+        color:black;
+        font-weight: 500;
+        font-size:18px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 10px;
+
+    }
+
+
+    /* ~~upcoming exhibitions~~ */
+   
+   #upcoming{
+    
+    /* display:flex-wrap; */
+    justify-content: center;
+    
+    padding:80px;
+    margin-top: 100px;   
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   
+   
+} 
+
+.imgbox{
+    display:flex;
+    position:relative;
+    margin:auto;
+    justify-content: center;
+
+}
+#upcoming img{
+    width:100%;
+   
+    
+}
+
+.side{
+    display:flex;
+    flex-direction: column;
+
+    position:relative;
+    margin:0 0 80px 0;
+    justify-content: center;
+    padding:30px 0 80px 0;
+    line-height:1.5;
+    box-shadow: 0 4px 20px -2px rgba(128, 128, 128, 0.377);
+    border: 0 solid;
+    width:62.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+
+
+}
+
+.side{
+    padding:30px;
+    
+}
+
+/* h2{ font-family: 'Roboto', sans-serif
+    font-size: 48px;
+
+    
+
+} */
+
+
+.side p{
+    margin-top: 18px;
+}
+
+
+
+/* ~~cards~~ */
+
+h2{
+    text-align: center;
+}
+.cards{
+    display:flex;
+justify-content: center;
+    
+    width: 1000px;
+    margin:auto;
+   margin-bottom:10%;
+    text-align:left;
+    
+ 
+    
+    
+
+    
+}
+
+.cards h4{
+ font-size:24px;
+ color:black;
+ text-align:left;
+ padding-bottom:8px;
+ 
+ 
+}
+
+.card-1{
+ padding:8px 18px;
+ box-shadow: 0px 15px 10px -15px #888888ad;
+
+ 
+}
+.card1-1{
+
+ width:100%;
+
+color:white;
+}
+.card-2{
+ border-bottom:3px solid gray;
+ padding:30px;
+ border-left:solid 20px black;
+
+}
+
+
+
+/* ~~~~mobile version~~~~~ */
+
+
+@media screen and (max-width: 900px){
+    /* body{
+    
+        background-image: url("image/canvas.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size:cover;
+        background-attachment: fixed;
+        
+    } */
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+    h2{
+        font-family: 'Roboto Slab', serif; 
+        font-size: 3rem;
+        margin: 80px
+        text-align: center;
+        padding:0 10px;
+        margin-bottom: 2rem;
+    }
+
+    /* ~~~~~~main~~~~~ */
+    #main{
+        display:flex;
+        flex-direction:column;
+        width: 100vw;
+     
+    }.header{
+        display:flex;
+       
+        font-size: 4rem;
+        font-weight:light ;
+        text-align: center;
+      
+       font-family: 'Roboto Slab', serif;
+    }
+    
+
+
+
+
+    /* schedule */
+
+
+    .artshow {
+        display: flex;
+        flex-direction:column;
+        max-width: 100%;
+       
+    }
+    
+
+    .art-show-schedule{
+   
+        display:flex;
+        flex-direction: column;
+        
+           text-align: center;
+           padding:20px;
+           margin:30px 0;
+           line-height: 1.5;
+           font-family: 'Roboto', sans-serif;
+           font-weight: 300;
+          
+           
+       }
+    
+
+
+       /* ~~~~~~~img description~~~~~~~~ */
+       /* up coming */
+#upcoming img{
+    
+    width:130%;
+}
+
+       .side{
+        display:flex;
+        flex-direction: column;
+        margin:0 0 80px 0;
+        justify-content: center;
+        padding:30px 0 0 0;
+        line-height:1.5;
+      
+        border: 0 solid;
+        width:130%;
+        padding:20px;
+        background-color: rgba(255, 255, 255, 0.8);
+    
+    
+    }
+
+
+    .cards{
+        display:flex;
+        flex-direction: column;
+        width:90vw;
+    }
+
+.card-1{
+    margin:30px 0; 
+  
+}
+.card-2{
+    border-top:solid 20px #8babca;
+    border-left:0px;
+    height:100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+}
