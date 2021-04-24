@@ -153,7 +153,7 @@
     bottom:20px;
     z-index:10;
     display:flex;
-    justify-content:center;
+   
     max-width: 750px;
   
    
@@ -163,8 +163,11 @@
     display:inline-block;
     filter: invert(1);
     margin-right:20px;
-    transform: scale(0.8);
+    transform: scale(0.3);
     transition:0.5s;
+    align-items: center;
+    margin:0;
+    align-content: center;
 }
 
 .social li a:hover{
