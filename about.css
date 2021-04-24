@@ -224,7 +224,7 @@ h2{
     display:flex;
 justify-content: center;
     
-    width: 1000px;
+    width: 80vw;
     margin:auto;
    margin-bottom:10%;
     text-align:left;
@@ -269,27 +269,44 @@ color:white;
 /* ~~~~mobile version~~~~~ */
 
 
-@media screen and (max-width: 900px){
-    /* body{
+
+
+@media screen and (max-width: 768px){
+    body{
     
         background-image: url("image/canvas.jpg");
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        background-size:cover;
+        background-size:contain;
         background-attachment: fixed;
         
-    } */
+    }
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+    h2{
+        font-family: 'Roboto Slab', serif; 
+        font-size: 3rem;
+        margin: 80px
+        text-align: center;
+        padding:0 10px;
+        margin-bottom: 2rem;
+    }
 
     /* ~~~~~~main~~~~~ */
     #main{
         display:flex;
         flex-direction:column;
-        width: 100%;
+        width: 100vw;
      
     }.header{
         display:flex;
        
-        font-size: 5rem;
+        font-size: 4rem;
         font-weight:light ;
         text-align: center;
       
@@ -333,6 +350,7 @@ color:white;
 #upcoming img{
     
     width:130%;
+    height:auto;
 }
 
        .side{
@@ -355,7 +373,7 @@ color:white;
     .cards{
         display:flex;
         flex-direction: column;
-        width:100%;
+        width:90vw;
     }
 
 .card-1{
