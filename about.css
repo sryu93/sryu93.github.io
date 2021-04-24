@@ -27,6 +27,15 @@ hr{
     border-bottom:2px;
 }
 
+h2{
+    font-family: 'Roboto Slab', serif; 
+    font-size: 4rem;
+    margin: 80px
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
 /* ~~~navbar~~~ */
 
 #navbar {
@@ -199,11 +208,6 @@ ul a {
 
 } */
 
-h2{
-    font-family: 'Roboto Slab', serif; 
-    font-size: 6rem;
-    margin: 80px
-}
 
 .side p{
     margin-top: 18px;
@@ -293,6 +297,9 @@ color:white;
     }
     
 
+
+
+
     /* schedule */
 
 
@@ -322,6 +329,12 @@ color:white;
 
 
        /* ~~~~~~~img description~~~~~~~~ */
+       /* up coming */
+#upcoming img{
+    
+    width:130%;
+}
+
        .side{
         display:flex;
         flex-direction: column;
@@ -331,17 +344,18 @@ color:white;
         line-height:1.5;
       
         border: 0 solid;
-        width:100%;
+        width:130%;
         padding:20px;
         background-color: rgba(255, 255, 255, 0.8);
     
     
     }
 
+
     .cards{
         display:flex;
         flex-direction: column;
-        width:80%;
+        width:100%;
     }
 
 .card-1{
