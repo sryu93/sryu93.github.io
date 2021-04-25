@@ -128,13 +128,15 @@ h1 {
 margin-bottom:10em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows:  1fr 1fr 0.3fr 0.3fr ; 
+    grid-template-rows:  1fr 1fr 0.3fr 0.3fr 0.3fr 0.3fr; 
     gap: 3em 3em;
     grid-template-areas:
         "Main-event Main-event Main-event Main-event"
         "Main-event Main-event Main-event Main-event"
         "event-1 event-1 event2 event2"
-        "event-1 event-1 event2 event2";
+        "event-1 event-1 event2 event2"
+        "event3 event3 event4 event4"
+        "event3 event3 event4 event4";
       
 }
 
@@ -202,7 +204,7 @@ margin-bottom:10em;
     background-color:rgba(0, 0, 0,0.5);
     color:white;
     padding:10px;
-    position:absolute;
+ position:absolute;
     bottom:0;
     width:100%;
 }
@@ -235,7 +237,7 @@ margin-bottom:10em;
     background-color:rgba(0, 0, 0,0.5);
     color:white;
     padding:10px;
-    position:absolute;
+   position:absolute;
     bottom:0;
     width:100%;
     text-align: justify;
@@ -253,7 +255,71 @@ margin-bottom:10em;
 }
 
 
+/* ~~~event3~~~~ */
 
+.event3 {
+  grid-area: event3;
+  background-image: url("image/v- blue abstract.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  position:relative;
+  margin-top: 80px;
+}
+.event-description3{
+  background-color:rgba(0, 0, 0,0.5);
+  color:white;
+  padding:10px;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  text-align: justify;
+}
+
+.event-description3 p{
+  margin-bottom:10px;
+}
+
+.event-description3 a{
+  color:black;
+  background-color: rgb(250, 250, 250);
+  padding:4px 10px;
+  
+}
+
+
+
+/* ~~~~event4~~~~ */
+
+.event4 {
+  grid-area: event4;
+  background-image: url("image/v- blue abstract.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  position:relative;
+  margin-top: 80px;
+}
+.event-description4{
+  background-color:rgba(0, 0, 0,0.5);
+  color:white;
+  padding:10px;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  text-align: justify;
+}
+
+.event-description4 p{
+  margin-bottom:10px;
+}
+
+.event-description4 a{
+  color:black;
+  background-color: rgb(250, 250, 250);
+  padding:4px 10px;
+  
+}
 
 /* footer*/
 *, *:before, *:after {
