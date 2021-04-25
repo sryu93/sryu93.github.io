@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif; */
+
+}
+
+
+    /* body{
+    
+        background-image: url("image/canvas.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size:cover;
+        background-attachment: fixed;
+        
+    }
+   */
+  
+    
+hr{
+    border-bottom:2px;
+}
+
+h2{
+    font-family: 'Roboto Slab', serif; 
+    font-size: 4rem;
+    margin: 80px
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+h3{
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  font-size:2rem;
+  margin-bottom: 50px;
+}
+
+
+/* ~~~navbar~~~ */
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    border: 0 solid;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    background-color:white;
+
+
+
+
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 60px;
+    
+
+
+
+
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+
+}
+
+ul a {
+    text-align: center;
+    margin: auto;
+    color: black;
+    font-size: 16px;
+    padding: 18 18px;
+
+}
+
+
+/* ~~~Art show~~~ */
+
+
+
+#main{
+    display:flex;
+  flex-direction: column;  
+   justify-content: center;
+   background-image: url("image/art about.png");
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size:cover;
+   padding:80px;
+   margin-top: 2px;
+   box-shadow: 0 4px 20px -2px rgba(128, 128, 128, 0.377);
+   align-items: center;
+ 
+}
+
+h1{
+    padding:30px;
+    font-size: 6.25rem;
+    font-weight:light ;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    margin:3rem auto;
+}
+.header{
+    display:flex;
+    justify-content: center;
+
+   margin:80px 0;
+   font-family: 'Roboto Slab', serif;
+  
+}
+
+.description_header{
+    font-family: 'Roboto', serif; 
+    text-align: center;
+    font-size:1rem;
+    line-height: 2;
+    max-width: 43rem;
+}
+
+
+
+/* ~gala text box~ */
+
+.gala-text{
+  margin: 3rem auto 2rem auto;
+  padding:20px;
+  max-width:43rem;
+ 
+  font-size: 1rem;
+  line-height: 2;
+}
+
+
+
+
+/* ~~  first gallery ~~ */
+
+
+
+.gallery {
+  padding:0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-content: start;
+    max-width: 43rem;
+    margin: 5rem auto;
+    transition: all 150ms linear;
+  }
+  
+  .gallery input[type="radio"] {
+    display: none;
+  }
+  
+  .gallery label {
+    position: relative;
+    display: block;
+    padding-bottom: 60%;
+    margin: 5px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .gallery label:before {
+    border: 1px solid #e3e3e3;
+    content: '';
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    top: -5px;
+  }
+  
+  .gallery img {
+    display: none;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    transition: all 150ms linear;
+  }
+  
+  .gallery input[name="select"]:checked + label + img {
+    display: block;
+  }
+  
+  .gallery input[name="select"]:checked + label:before {
+    border: 1px solid #000;
+  }
+
+/* 2nd gallery  */
+
+
+
+.gallery2 {
+  padding:0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  align-content: start;
+  max-width: 43rem;
+  margin: 5rem auto;
+  transition: all 150ms linear;
+}
+
+.gallery2 input[type="radio"] {
+  display: none;
+}
+
+.gallery2 label {
+  position: relative;
+  display: block;
+  padding-bottom: 60%;
+  margin: 5px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.gallery2 label:before {
+  border: 1px solid #e3e3e3;
+  content: '';
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  top: -5px;
+}
+
+.gallery2 img {
+  display: none;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  transition: all 150ms linear;
+}
+
+.gallery2 input[name="select2"]:checked + label + img {
+  display: block;
+}
+
+.gallery2 input[name="select2"]:checked + label:before {
+  border: 1px solid #000;
+}
+
+
+
+/* 4rd gallery  */
+
+
+
+.gallery3 {
+  padding:0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  align-content: start;
+  max-width: 43rem;
+  margin: 5rem auto;
+  transition: all 150ms linear;
+}
+
+.gallery3 input[type="radio"] {
+  display: none;
+}
+
+.gallery3 label {
+  position: relative;
+  display: block;
+  padding-bottom: 60%;
+  margin: 5px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.gallery3 label:before {
+  border: 1px solid #e3e3e3;
+  content: '';
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  top: -5px;
+}
+
+.gallery3 img {
+  display: none;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  transition: all 150ms linear;
+}
+
+.gallery3 input[name="select3"]:checked + label + img {
+  display: block;
+}
+
+.gallery3 input[name="select3"]:checked + label:before {
+  border: 1px solid #000;
+}
+
+
+/* @media   screen and (max-width 1026px) and (min-width:480px){
+  .description_header{
+    font-family: 'Roboto', serif; 
+    text-align: justify;
+    width:60vw;
+    line-height:2;
+}
+
+}
+
+@media   screen and (max-width 360px) {
+  .description_header{
+    font-family: 'Roboto', serif; 
+    text-align: left;
+    width:100vw;
+    line-height:1;
+}
+
+
+} */
